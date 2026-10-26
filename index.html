@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ajitha Dental Clinic | Your Smile, Our Signature</title>
+  <meta name="description" content="Ajitha Dental Clinic: exceptional dental care with a gentle touch and a commitment to confident, healthy smiles.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Reusable tooth icon for service badges -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="tooth" viewBox="0 0 32 32">
+      <path d="M8 6c-2.5 0-4 2-4 5 0 3 1 5 2 8s1.5 7 3.5 7 2.5-3 3.5-6c.4-1.3 1-1.3 1.5-1.3s1.1 0 1.5 1.3c1 3 1.5 6 3.5 6s2.5-4 3.5-7 2-5 2-8c0-3-1.5-5-4-5-2 0-3 1-4 1s-2-1-4-1z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+    </symbol>
+  </svg>
+
+  <!-- Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="#home" class="brand" aria-label="Ajitha Dental Clinic home">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32" width="34" height="34"><use href="#tooth"/></svg></span>
+        <span class="brand-text">
+          <span class="brand-name">AJITHA</span>
+          <span class="brand-sub">DENTAL CLINIC</span>
+        </span>
+      </a>
+
+      <div class="header-actions">
+        <a href="#" class="header-wa" data-wa-link aria-label="Chat with us on WhatsApp" title="Chat with us on WhatsApp" aria-disabled="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20.5 11.6a8.5 8.5 0 0 1-12.4 7.5L3.5 20.5l1.5-4.5A8.5 8.5 0 1 1 20.5 11.6z"/><path d="M9 9.2c.2-.4.5-.5.8-.5h.5l.6 1.6-.7.9c.5 1 1.3 1.8 2.3 2.3l.9-.7 1.6.6v.5c0 .3-.1.6-.5.8-.5.3-1.2.6-2 .4-2.1-.6-3.8-2.3-4.4-4.4-.1-.8.2-1.5.5-2z"/></svg></a>
+        <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+      <nav class="primary-nav" id="primaryNav" aria-label="Primary">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#case-studies">Case Studies</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li class="nav-wa-item"><a href="#" class="nav-wa" data-wa-link aria-label="Chat with us on WhatsApp" title="Chat with us on WhatsApp" aria-disabled="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20.5 11.6a8.5 8.5 0 0 1-12.4 7.5L3.5 20.5l1.5-4.5A8.5 8.5 0 1 1 20.5 11.6z"/><path d="M9 9.2c.2-.4.5-.5.8-.5h.5l.6 1.6-.7.9c.5 1 1.3 1.8 2.3 2.3l.9-.7 1.6.6v.5c0 .3-.1.6-.5.8-.5.3-1.2.6-2 .4-2.1-.6-3.8-2.3-4.4-4.4-.1-.8.2-1.5.5-2z"/></svg></a></li>
+          <li><a href="#book" class="btn btn-primary btn-small">Book Appointment</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- Hero: scroll-driven JPG frame animation (hero only) -->
+    <section class="hero" id="home" aria-labelledby="heroTitle">
+      <div class="hero-stage">
+        <canvas id="heroCanvas" class="hero-canvas" aria-hidden="true"></canvas>
+        <div class="hero-overlay" aria-hidden="true"></div>
+
+        <div class="hero-content">
+          <h1 id="heroTitle" class="hero-title">
+            <span class="hero-name">AJITHA</span>
+            <span class="hero-sub">DENTAL CLINIC</span>
+          </h1>
+          <span class="hero-rule" aria-hidden="true"></span>
+          <p class="hero-tagline">Your Smile, Our Signature.</p>
+          <p class="hero-text">Exceptional dental care with a gentle touch and a commitment to confident, healthy smiles.</p>
+          <div class="hero-actions">
+            <a href="#book" class="btn btn-primary">Book an Appointment</a>
+            <a href="#services" class="btn btn-outline-light">Our Services</a>
+          </div>
+        </div>
+
+        <div class="hero-loader" id="heroLoader" aria-hidden="true">
+          <span class="hero-loader-bar"><span id="heroLoaderFill"></span></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section about" id="about" aria-labelledby="aboutTitle">
+      <div class="container split">
+        <figure class="about-figure">
+          <div class="media-placeholder about-media" aria-hidden="true">
+            <span class="placeholder-label">Clinic photograph<br><small>images/about-clinic-01.jpg</small></span>
+          </div>
+          <img class="about-img" src="images/about-clinic-01.jpg" width="1200" height="900" loading="lazy" decoding="async"
+               alt="A dentist in a white coat and gloves examining a patient's teeth with a dental mirror in a modern, calm dental clinic">
+        </figure>
+        <div class="split-content">
+          <p class="eyebrow">About the Clinic</p>
+          <h2 id="aboutTitle" class="section-title">About Ajitha Dental Clinic</h2>
+          <p class="subhead">Healthy Smiles. Brighter Lives.</p>
+          <p>At Ajitha Dental Clinic, we believe every smile tells a story. Our goal is to provide gentle, personalized dental care in a comfortable and welcoming environment. From routine care to advanced treatments, we are here to support your oral health and help you smile with confidence.</p>
+          <a href="#services" class="btn btn-primary">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services: 8 equal cards in one row on wide screens -->
+    <section class="section services" id="services" aria-labelledby="servicesTitle">
+      <div class="container">
+        <header class="section-head center">
+          <p class="eyebrow">Our Services</p>
+          <h2 id="servicesTitle" class="section-title">Comprehensive Dental Care</h2>
+          <p class="section-sub">From everyday care to advanced treatments, explore our dental services.</p>
+        </header>
+
+      </div>
+
+      <div class="service-marquee" id="serviceMarquee" role="region" aria-label="Our services, scrolling">
+        <div class="service-track" id="serviceTrack">
+          <div class="service-group">
+          <article class="service-card">
+            <div class="service-media media-placeholder"><span class="img-zoom"><img class="service-img" src="images/service-general-dentistry.jpg" width="800" height="597" decoding="async" alt="General Dentistry service"></span><span class="service-badge" aria-hidden="true"><svg viewBox="0 0 32 32" width="20" height="20"><use href="#tooth"/></svg></span></div>
+            <div class="service-body">
+              <h3>General Dentistry</h3>
+              <p>Routine examinations and everyday dental care to keep your teeth and gums healthy.</p>
+              <a href="#book" class="card-link">Explore Treatment <span class="card-arrow" aria-hidden="true">&rarr;</span><span class="sr-only"> General Dentistry</span></a>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div class="service-media media-placeholder"><span class="img-zoom"><img class="service-img" src="images/service-teeth-cleaning.jpg" width="800" height="597" decoding="async" alt="Teeth Cleaning service"></span><span class="service-badge" aria-hidden="true"><svg viewBox="0 0 32 32" width="20" height="20"><use href="#tooth"/></svg></span></div>
+            <div class="service-body">
+              <h3>Teeth Cleaning</h3>
+              <p>Professional cleaning to remove plaque and build-up and support fresh, healthy gums.</p>
+              <a href="#book" class="card-link">Explore Treatment <span class="card-arrow" aria-hidden="true">&rarr;</span><span class="sr-only"> Teeth Cleaning</span></a>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div class="service-media media-placeholder"><span class="img-zoom"><img class="service-img" src="images/service-cosmetic-dentistry.jpg" width="800" height="597" decoding="async" alt="Cosmetic Dentistry service"></span><span class="service-badge" aria-hidden="true"><svg viewBox="0 0 32 32" width="20" height="20"><use href="#tooth"/></svg></span></div>
+            <div class="service-body">
+              <h3>Cosmetic Dentistry</h3>
+              <p>Thoughtful aesthetic options designed around the look you want and your natural features.</p>
+              <a href="#book" class="card-link">Explore Treatment <span class="card-arrow" aria-hidden="true">&rarr;</span><span class="sr-only"> Cosmetic Dentistry</span></a>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div class="service-media media-placeholder"><span class="img-zoom"><img class="service-img" src="images/service-teeth-whitening.jpg" width="800" height="597" decoding="async" alt="Teeth Whitening service"></span><span class="service-badge" aria-hidden="true"><svg viewBox="0 0 32 32" width="20" height="20"><use href="#tooth"/></svg></span></div>
+            <div class="service-body">
+              <h3>Teeth Whitening</h3>
+              <p>Brightening options discussed with you first, so you know what to expect before you begin.</p>
+              <a href="#book" class="card-link">Explore Treatment <span class="card-arrow" aria-hidden="true">&rarr;</span><span class="sr-only"> Teeth Whitening</span></a>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div class="service-media media-placeholder"><span class="img-zoom"><img class="service-img" src="images/service-root-canal.jpg" width="800" height="597" decoding="async" alt="Root Canal Treatment service"></span><span class="service-badge" aria-hidden="true"><svg viewBox="0 0 32 32" width="20" height="20"><use href="#tooth"/></svg></span></div>
+            <div class="service-body">
+              <h3>Root Canal Treatment</h3>
+              <p>Careful treatment to relieve discomfort and preserve your natural tooth where possible.</p>
+              <a href="#book" class="card-link">Explore Treatment <span class="card-arrow" aria-hidden="true">&rarr;</span><span class="sr-only"> Root Canal Treatment</span></a>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div class="service-media media-placeholder"><span class="img-zoom"><img class="service-img" src="images/service-dental-implants.jpg" width="800" height="597" decoding="async" alt="Dental Implants service"></span><span class="service-badge" aria-hidden="true"><svg viewBox="0 0 32 32" width="20" height="20"><use href="#tooth"/></svg></span></div>
+            <div class="service-body">
+              <h3>Dental Implants</h3>
+              <p>Restorative options to replace missing teeth, planned with you after a thorough assessment.</p>
+              <a href="#book" class="card-link">Explore Treatment <span class="card-arrow" aria-hidden="true">&rarr;</span><span class="sr-only"> Dental Implants</span></a>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div class="service-media media-placeholder"><span class="img-zoom"><img class="service-img" src="images/service-orthodontic-treatment.jpg" width="800" height="597" decoding="async" alt="Orthodontic Treatment service"></span><span class="service-badge" aria-hidden="true"><svg viewBox="0 0 32 32" width="20" height="20"><use href="#tooth"/></svg></span></div>
+            <div class="service-body">
+              <h3>Orthodontic Treatment</h3>
+              <p>Guidance on aligning your teeth and bite, with a plan discussed clearly at every stage.</p>
+              <a href="#book" class="card-link">Explore Treatment <span class="card-arrow" aria-hidden="true">&rarr;</span><span class="sr-only"> Orthodontic Treatment</span></a>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div class="service-media media-placeholder"><span class="img-zoom"><img class="service-img" src="images/service-preventive-care.jpg" width="800" height="597" decoding="async" alt="Preventive Dental Care service"></span><span class="service-badge" aria-hidden="true"><svg viewBox="0 0 32 32" width="20" height="20"><use href="#tooth"/></svg></span></div>
+            <div class="service-body">
+              <h3>Preventive Dental Care</h3>
+              <p>Regular check-ups and personalised advice to help you protect your smile over time.</p>
+              <a href="#book" class="card-link">Explore Treatment <span class="card-arrow" aria-hidden="true">&rarr;</span><span class="sr-only"> Preventive Dental Care</span></a>
+            </div>
+          </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Case Studies (after Services, before Testimonials) -->
+    <section class="section cases" id="case-studies" aria-labelledby="casesTitle">
+      <div class="container">
+        <header class="section-head center">
+          <p class="eyebrow">Case Studies</p>
+          <h2 id="casesTitle" class="section-title">Smile Transformations</h2>
+          <p class="section-sub">Explore illustrative dental care journeys. Individual plans and outcomes vary.</p>
+        </header>
+
+        <div class="case-grid">
+          <article class="case-card">
+            <div class="media-placeholder case-media">
+              <span class="img-zoom"><img class="case-img" src="images/case-01.jpg" width="1200" height="900" loading="lazy" decoding="async" alt="Case study 1 photograph"></span>
+              <span class="case-number" aria-hidden="true">Case 01</span>
+              <span class="case-reveal" aria-hidden="true"><span>Case study coming soon</span></span>
+            </div>
+            <div class="case-body">
+              <p class="case-category">Smile Makeover</p>
+              <h3>Personalised smile planning consultation</h3>
+              <p class="case-overview">A step-by-step treatment discussion designed to understand the patient's goals, smile concerns, and the care path most suited to their needs.</p>
+              <button type="button" class="card-link case-link" data-case-study="smile-planning">View Case Study</button>
+            </div>
+          </article>
+
+          <article class="case-card">
+            <div class="media-placeholder case-media">
+              <span class="img-zoom"><img class="case-img" src="images/case-02.jpg" width="1200" height="900" loading="lazy" decoding="async" alt="Case study 2 photograph"></span>
+              <span class="case-number" aria-hidden="true">Case 02</span>
+              <span class="case-reveal" aria-hidden="true"><span>Case study coming soon</span></span>
+            </div>
+            <div class="case-body">
+              <p class="case-category">Restorative Care</p>
+              <h3>Comfort-focused treatment journey</h3>
+              <p class="case-overview">A patient-centred restorative visit focused on relieving discomfort, improving function, and explaining every stage of care with clarity and reassurance.</p>
+              <button type="button" class="card-link case-link" data-case-study="restorative-care">View Case Study</button>
+            </div>
+          </article>
+
+          <article class="case-card">
+            <div class="media-placeholder case-media">
+              <span class="img-zoom"><img class="case-img" src="images/case-03.jpg" width="1200" height="900" loading="lazy" decoding="async" alt="Case study 3 photograph"></span>
+              <span class="case-number" aria-hidden="true">Case 03</span>
+              <span class="case-reveal" aria-hidden="true"><span>Case study coming soon</span></span>
+            </div>
+            <div class="case-body">
+              <p class="case-category">Orthodontic Guidance</p>
+              <h3>Aligned bite and smile goals</h3>
+              <p class="case-overview">An orthodontic consultation that focuses on long-term oral health, bite balance, and a treatment plan shaped around each patient's daily routine and preferences.</p>
+              <button type="button" class="card-link case-link" data-case-study="orthodontic-guidance">View Case Study</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <dialog class="case-dialog" id="caseDialog" aria-labelledby="caseDialogTitle" aria-describedby="caseDialogDisclaimer">
+      <div class="case-dialog-content">
+        <button class="case-dialog-close" id="caseDialogClose" type="button" aria-label="Close case study" autofocus>&times;</button>
+        <p class="eyebrow" id="caseDialogCategory"></p>
+        <h2 class="section-title" id="caseDialogTitle"></h2>
+        <p class="case-dialog-intro" id="caseDialogIntro"></p>
+        <div class="case-dialog-details" id="caseDialogDetails"></div>
+        <p class="case-dialog-disclaimer" id="caseDialogDisclaimer">Illustrative example only — this is not an actual patient case or treatment result. Diagnosis, treatment suitability, costs, timelines, and outcomes vary and should be discussed with a qualified dentist.</p>
+        <a href="#book" class="btn btn-primary case-dialog-cta">Discuss your care options</a>
+      </div>
+    </dialog>
+
+    <!-- Why Choose Us -->
+    <section class="section why" aria-labelledby="whyTitle">
+      <div class="container">
+        <header class="why-head">
+          <p class="eyebrow">Why Choose Us</p>
+          <h2 id="whyTitle" class="section-title">More Than Just Dental Care</h2>
+        </header>
+
+        <div class="why-grid">
+          <div class="why-item">
+            <span class="why-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="16" r="7"/><path d="M10 40c1.5-7 7-11 14-11s12.5 4 14 11"/></svg>
+            </span>
+            <div>
+              <h3>Patient-Centered Care</h3>
+              <p>Your questions, preferences, and concerns guide every conversation and recommendation.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <span class="why-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M24 6l14 5v11c0 9-6 16-14 20-8-4-14-11-14-20V11z"/><path d="M18 24l4 4 8-8"/></svg>
+            </span>
+            <div>
+              <h3>Comfortable Treatment Experience</h3>
+              <p>A calm, unhurried environment, with each step explained before it begins.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <span class="why-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M24 42s-13-7.5-13-18a7 7 0 0 1 13-3.5A7 7 0 0 1 37 24c0 10.5-13 18-13 18z"/></svg>
+            </span>
+            <div>
+              <h3>Personalized Dental Care</h3>
+              <p>Plans shaped around your goals, your history, and what matters most to you.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <span class="why-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M24 8c-6 8-12 13-12 21a12 12 0 0 0 24 0c0-8-6-13-12-21z"/><path d="M19 30a5 5 0 0 0 5 5"/></svg>
+            </span>
+            <div>
+              <h3>Focus on Oral Health</h3>
+              <p>Prevention and long-term health come first, supporting a lasting, confident smile.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Appointment -->
+    <section class="section book" id="book" aria-labelledby="bookTitle">
+      <div class="container book-grid">
+        <div class="book-media">
+          <img class="book-img" src="images/book-clinic-01.jpg" width="800" height="1423" loading="lazy" decoding="async" alt="Ajitha Dental Clinic appointment photograph">
+        </div>
+
+        <div class="book-main">
+          <p class="eyebrow">Appointment</p>
+          <h2 id="bookTitle" class="section-title">Book an Appointment</h2>
+          <p class="subhead">Take the first step towards a healthier, brighter smile.</p>
+
+          <form id="bookingForm" class="booking-form" novalidate>
+            <div class="form-grid">
+              <div class="field">
+                <label for="patientName">Patient Name <span class="req" aria-hidden="true">*</span></label>
+                <input type="text" id="patientName" name="patientName" autocomplete="name" required aria-describedby="patientNameError">
+                <p class="field-error" id="patientNameError" role="alert"></p>
+              </div>
+              <div class="field">
+                <label for="phone">Phone Number <span class="req" aria-hidden="true">*</span></label>
+                <input type="tel" id="phone" name="phone" autocomplete="tel" inputmode="tel" placeholder="e.g. +91 98765 43210" required aria-describedby="phoneError">
+                <p class="field-error" id="phoneError" role="alert"></p>
+              </div>
+              <div class="field">
+                <label for="date">Preferred Date <span class="req" aria-hidden="true">*</span></label>
+                <input type="date" id="date" name="date" required aria-describedby="dateError">
+                <p class="field-error" id="dateError" role="alert"></p>
+              </div>
+              <div class="field">
+                <label for="time">Preferred Time <span class="req" aria-hidden="true">*</span></label>
+                <input type="time" id="time" name="time" required aria-describedby="timeError">
+                <p class="field-error" id="timeError" role="alert"></p>
+              </div>
+              <div class="field full">
+                <label for="reason">Reason for Visit <span class="optional">(optional)</span></label>
+                <textarea id="reason" name="reason" rows="3" maxlength="500"></textarea>
+              </div>
+            </div>
+
+            <div class="form-footer">
+              <button type="submit" class="btn btn-primary" id="submitBtn">Request Appointment</button>
+              <p class="form-note">Our team will contact you to confirm your appointment.</p>
+              <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+            </div>
+          </form>
+          <div class="book-contact">
+            <p class="book-contact-label">Prefer to talk first?</p>
+            <div class="book-contact-actions">
+              <a href="#" class="btn btn-primary" data-wa-link data-wa-message="Hello Ajitha Dental Clinic, I would like to book an appointment. Please share the available slots." aria-label="Book via WhatsApp" aria-disabled="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20.5 11.6a8.5 8.5 0 0 1-12.4 7.5L3.5 20.5l1.5-4.5A8.5 8.5 0 1 1 20.5 11.6z"/><path d="M9 9.2c.2-.4.5-.5.8-.5h.5l.6 1.6-.7.9c.5 1 1.3 1.8 2.3 2.3l.9-.7 1.6.6v.5c0 .3-.1.6-.5.8-.5.3-1.2.6-2 .4-2.1-.6-3.8-2.3-4.4-4.4-.1-.8.2-1.5.5-2z"/></svg><span>Book via WhatsApp</span></a>
+              <a href="#" class="btn btn-outline-dark" data-tel-link aria-label="Call Ajitha Dental Clinic" aria-disabled="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a1 1 0 0 1-1 1A16 16 0 0 1 4 5a1 1 0 0 1 1-1z"/></svg><span>Call Clinic</span></a>
+            </div>
+          </div>
+        </div>
+
+        <aside class="book-aside" aria-hidden="true">
+          <p class="book-script">Your Smile<br>Matters</p>
+          <span class="book-rule"></span>
+          <svg viewBox="0 0 32 32" width="26" height="26"><use href="#tooth"/></svg>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section testimonials" id="testimonials" aria-labelledby="testimonialsTitle">
+      <div class="container">
+        <header class="section-head center">
+          <p class="eyebrow">Testimonials</p>
+          <h2 id="testimonialsTitle" class="section-title">What Our Patients Say</h2>
+        </header>
+
+        <div class="slider" id="slider" aria-roledescription="carousel" aria-label="Patient testimonials">
+          <button class="slider-btn slider-prev" id="prevBtn" aria-label="Previous testimonial">&#8592;</button>
+          <div class="slider-track" id="sliderTrack"></div>
+          <button class="slider-btn slider-next" id="nextBtn" aria-label="Next testimonial">&#8594;</button>
+          <div class="slider-dots" id="sliderDots"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="section gallery" id="gallery" aria-labelledby="galleryTitle">
+      <div class="container">
+        <header class="section-head center">
+          <p class="eyebrow">Gallery</p>
+          <h2 id="galleryTitle" class="section-title">A Glimpse Inside Our Clinic</h2>
+        </header>
+        <div class="gallery-grid">
+          <figure class="gallery-item"><span class="img-zoom"><img class="gallery-img" src="images/gallery-01.jpg" width="1200" height="900" loading="lazy" decoding="async" alt="Ajitha Dental Clinic gallery photograph 1"></span></figure>
+          <figure class="gallery-item"><span class="img-zoom"><img class="gallery-img" src="images/gallery-02.jpg" width="1200" height="900" loading="lazy" decoding="async" alt="Ajitha Dental Clinic gallery photograph 2"></span></figure>
+          <figure class="gallery-item"><span class="img-zoom"><img class="gallery-img" src="images/gallery-03.jpg" width="1200" height="900" loading="lazy" decoding="async" alt="Ajitha Dental Clinic gallery photograph 3"></span></figure>
+          <figure class="gallery-item"><span class="img-zoom"><img class="gallery-img" src="images/gallery-04.jpg" width="1200" height="900" loading="lazy" decoding="async" alt="Ajitha Dental Clinic gallery photograph 4"></span></figure>
+          <figure class="gallery-item"><span class="img-zoom"><img class="gallery-img" src="images/gallery-05.jpg" width="1200" height="900" loading="lazy" decoding="async" alt="Ajitha Dental Clinic gallery photograph 5"></span></figure>
+          <figure class="gallery-item"><span class="img-zoom"><img class="gallery-img" src="images/gallery-06.jpg" width="1200" height="900" loading="lazy" decoding="async" alt="Ajitha Dental Clinic gallery photograph 6"></span></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact" aria-labelledby="contactTitle">
+      <div class="container contact-grid">
+        <div class="contact-intro">
+          <h2 id="contactTitle">Get In Touch</h2>
+          <p>We are here to help you with your dental needs.</p>
+        </div>
+
+        <dl class="contact-item">
+          <dt><span class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 21s-6-5.5-6-10a6 6 0 0 1 12 0c0 4.5-6 10-6 10z"/><circle cx="12" cy="11" r="2.2"/></svg></span>Clinic Address</dt>
+          <dd id="addressText" class="placeholder-text">[Clinic address to be added]</dd>
+        </dl>
+        <dl class="contact-item">
+          <dt><span class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a1 1 0 0 1-1 1A16 16 0 0 1 4 5a1 1 0 0 1 1-1z"/></svg></span>Phone</dt>
+          <dd id="phoneText" class="placeholder-text">[Contact number to be added]</dd>
+        </dl>
+        <dl class="contact-item">
+          <dt><span class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 2"/></svg></span>Opening Hours</dt>
+          <dd id="hoursText" class="placeholder-text">[Opening hours to be added]</dd>
+        </dl>
+        <dl class="contact-item">
+          <dt><span class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="5" width="18" height="14" rx="1.5"/><path d="M3.5 6.5 12 13l8.5-6.5"/></svg></span>Email</dt>
+          <dd id="emailText" class="placeholder-text">[Email address, if available]</dd>
+        </dl>
+
+        <a href="#" id="directionsBtn" class="btn btn-light contact-btn" aria-disabled="true">Get Directions</a>
+      </div>
+
+      <!-- <div class="container">
+        <div class="map-frame" id="mapFrame">
+          <p class="map-note" id="mapNote">Clinic map will appear here once the clinic address is added to <code>config.js</code> (address).</p>
+        </div>
+      </div> -->
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-top">
+      <a href="#home" class="brand footer-brand" aria-label="Ajitha Dental Clinic home">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32" width="34" height="34"><use href="#tooth"/></svg></span>
+        <span class="brand-text">
+          <span class="brand-name">AJITHA</span>
+          <span class="brand-sub">DENTAL CLINIC</span>
+        </span>
+      </a>
+
+      <nav aria-label="Footer">
+        <ul class="footer-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#case-studies">Case Studies</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <p class="footer-social"><span class="placeholder-text">[Social links, when provided]</span></p>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>&copy; <span id="year"></span> Ajitha Dental Clinic. All rights reserved.</p>
+        <p class="footer-tagline">Healthy Smiles &nbsp;&bull;&nbsp; Brighter Futures</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
